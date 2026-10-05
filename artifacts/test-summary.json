@@ -1,0 +1,8 @@
+{
+  "tests": "24",
+  "assertions": "68",
+  "failures": "0",
+  "skipped": "0",
+  "typecheck": "passed",
+  "environment": "synthetic issuer, loopback, no external identity service"
+}
