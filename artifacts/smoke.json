@@ -1,0 +1,53 @@
+{
+  "environment": "loopback-synthetic-issuer-only",
+  "sdk": "@modelcontextprotocol/sdk@1.32.1",
+  "protocol": "2025-11-25",
+  "transport": "Streamable HTTP / JSON",
+  "tools": [
+    "whoami"
+  ],
+  "toolResult": [
+    {
+      "type": "text",
+      "text": "synthetic-subject: local.read"
+    }
+  ],
+  "authorizationParameterNames": [
+    "client_id",
+    "code_challenge",
+    "code_challenge_method",
+    "redirect_uri",
+    "resource",
+    "response_type",
+    "scope",
+    "state"
+  ],
+  "tokenParameterNames": [
+    [
+      "client_id",
+      "code",
+      "code_verifier",
+      "grant_type",
+      "redirect_uri",
+      "resource"
+    ]
+  ],
+  "routes": [
+    "POST /mcp",
+    "GET /.well-known/oauth-protected-resource/mcp",
+    "GET /.well-known/oauth-authorization-server",
+    "GET /authorize",
+    "GET /.well-known/oauth-protected-resource/mcp",
+    "GET /.well-known/oauth-authorization-server",
+    "POST /token",
+    "POST /mcp",
+    "POST /mcp",
+    "GET /mcp",
+    "POST /mcp",
+    "POST /mcp"
+  ],
+  "liveGroupChecks": 5,
+  "realCognitoEntraIntuneVerified": false,
+  "browserInteraction": "simulated navigation, callback validation by client provider",
+  "credentialsWritten": false
+}
